@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Drag and Drop Puzzle Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link href="css/imageAnim.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header id="headLine">
+		<h1>fun with javascript!</h1>
+		<p>drag and drop puzzle pieces below!</p>
+	</header>
+	<section id="game-boards">
+		 <div class="puzzle-pieces"> <!-- this is the drag are -->
+
+		 <h3 class="hidden">The Drag Zone</h3>
+			<img id="img0" data-track="track.mp3" src="images/topLeft0.jpg" alt="top left" class="puzzle-image" draggable="true">
+			<img id="img1" data-track="track.mp3" src="images/topRight0.jpg" alt="top left" class="puzzle-image" draggable="true">
+			<img id="img2" data-track="track.mp3" src="images/bottomLeft0.jpg" alt="top left" class="puzzle-image" draggable="true">
+			<img id="img3" data-track="track.mp3" src="images/bottomRight0.jpg" alt="top left" class="puzzle-image" draggable="true">
+		</div> <!-- end parent node -->
+
+
+		 <div class="puzzle-board">
+		 	<div class="drop-zone tl"> </div>
+		 	<div class="drop-zone tr"> </div>
+		 	<div class="drop-zone bl"> </div>
+		 	<div class="drop-zone br"> </div>
+		 </div>
+
+	</section>
+	<!-- <section id="wrapper" class="commonSettings"></section> -->
+
+	<footer>
+		<p>click thumb to change pieces!</p>
+		<nav id="buttonHolder">
+			<img data-puzzleref="0" src="images/buttonZero.jpg" alt="thumbnail">
+			<img data-puzzleref="1" src="images/buttonOne.jpg" alt="thumbnail">
+	    	<img data-puzzleref="2" src="images/buttonTwo.jpg" alt="thumbnail">
+			<img data-puzzleref="3" src="images/buttonThree.jpg" alt="thumbnail">
+		</nav>
+	</footer>
+
+	<script src="script/imageAnim.js"></script>
+</body>
+</html>
